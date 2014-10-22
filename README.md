@@ -3,4 +3,4 @@ signalr
 
 experimenting on signalr
 
-![snapshot](http://i60.tinypic.com/219p2f5.jpg)
+![snapshot](http://i59.tinypic.com/2drihif.jpg)
