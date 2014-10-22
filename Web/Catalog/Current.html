@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../Content/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../Content/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="../Content/bootstrap-theme.min.css"/>
+   
+
+</head>
+    <body>
+        <div class="well-small well" style="margin-top: 7px;">
+            <h3 id="title">Loading...</h3>
+        </div>
+        <ul id="chalkboard" class="thumbnails">
+            <!--<li title="title" style="display: inline-table" data-oldvalue="value" id="id">
+                <div style="width: 160px;" class="thumbnail">
+                    <p  style="text-align:center"> + label + </p>
+                    <center>
+                        <a href="/alerts?Context=context" target="_blank">
+                            <img style="width: 66px;" src="../img/0.png" />
+                        </a>
+                    </center><p style="text-align:center;"> + label + </p>
+                </div>
+            </li>-->
+            
+           
+
+        </ul>
+        <script src="../Scripts/jquery-2.1.1.min.js"></script>
+        <script src="../Scripts/jquery.signalR-2.1.2.js"></script>
+        <script type="text/javascript" src="../signalr/hubs"></script>
+        <script src="../Scripts/mod.signalr.js"> </script>
+
+        <style type="text/css">
+            body {
+                padding-top: 10px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                signalrModule.start();
+                signalrModule.drawAlarms();
+            });
+        </script>
+
+    </body>
+</html>
